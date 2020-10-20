@@ -1,0 +1,30 @@
+nav {
+  width: 100%;
+  .nav {
+    &-wrapper {
+      width: 60%;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+    &-items {
+      img {
+        width:16rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    .nav {
+      &-wrapper {
+        width: 80%;
+      }
+      &-items {
+        img {
+          width:14rem;
+        }
+      }
+    }
+  }
+}

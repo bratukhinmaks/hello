@@ -1,0 +1,41 @@
+extends ../layouts/main
+
+block variables
+
+
+block content
+    include ../sections/navigation
+    include ../sections/hero
+    include ../sections/quots
+    include ../sections/testimonals
+
+block body_end
+    script.
+        $(document).ready(() =>{
+            $('.hero-slider').slick({
+                dots: true,
+                infinite: false,
+                speed: 300,
+                arrows: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                autoPlay: false,
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+
+                        }
+                    },
+                    {
+                        breakpoint: 520,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        }
+                    }
+                ]
+            });
+        })

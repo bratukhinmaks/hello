@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+}
+p {
+  margin: 0;
+}
+.slick-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-dots li button::before {
+  color: red !important;
+  font-size: 2.8rem;
+  margin: 7.5rem 0;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  color: red !important;
+  font-size: 2.8rem;
+  margin: 7.5rem 0;
+}
+
+.slick-prev:before {
+  content: url("../../img/arrow_left.svg") !important;
+}
+
+.slick-next:before {
+  content: url("../../img/arrow_right.svg") !important;
+}
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 57.5%;
+  }
+  .slick-dots li.slick-active button:before {
+    color: red;
+    margin: 8rem 0;
+    opacity: 1;
+  }
+  .slick-dots li button::before {
+    margin: 8rem 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 52.5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 47.5%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  html {
+    font-size: 42.5%;
+  }
+}
+
+
